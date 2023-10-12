@@ -17,7 +17,7 @@ header {
 }
 
 body {
-    background-image: url("img/bg40%.png");
+    background-image: url("assets/bg40%.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -36,12 +36,17 @@ h2 {
 
 p {
     font-family: 'Architects Daughter', cursive;
-
+text-align: center;
 }
 
 .btn {
+    margin-top: 0.5rem;
     background-color: #BD943E;
     border: #AF7324;
+}
+
+.btn:hover {
+    background-color:#92A55D;
 }
 
 .bigCard {
