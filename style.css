@@ -4,25 +4,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 /* font-family: 'Cabin Sketch', sans-serif; */
 
-body {
-    background-image: url("img/bg30%.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-h1 {
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    font-family: 'Cabin Sketch', sans-serif;
+header {
     border: 4mm ridge rgba(211, 220, 50, .6);
     border-radius: 10px;
     background: linear-gradient(0deg, rgba(34, 195, 134, 0.7847514005602241) 0%, rgba(207, 133, 35, 0.958420868347339) 100%);
 }
 
+.logo {
+    width: 7rem;
+    height: auto;
+    margin-left: 25rem;
+}
+
+body {
+    background-image: url("img/bg40%.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin-right: 25rem;
+    font-family: 'Cabin Sketch', sans-serif;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+p {
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+.btn {
+    background-color: #BD943E;
+    border: #AF7324;
+}
+
 .bigCard {
     text-align: center;
-    padding: 2rem;
+    margin: 0.8rem;
+    margin-left: 7rem;
 }
 
 .card {
@@ -31,7 +56,7 @@ h1 {
 }
 
 .card-img-top {
-    width: 15rem;
+    width: 12rem;
     height: auto;
     padding-bottom: 0.5rem;
 }
@@ -46,10 +71,10 @@ h1 {
 .card-text {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.2rem;
-    color:black;
+    color: black;
 }
 
 label {
     font-family: 'Architects Daughter', cursive;
-
+    padding-bottom: 0.5rem;
 }
