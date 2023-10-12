@@ -18,6 +18,7 @@
     }
 }
 
+    
 header {
     border: 4mm ridge rgba(211, 220, 50, .6);
     border-radius: 10px;
@@ -85,23 +86,25 @@ p {
     width: 25rem;
 }
 
-.cardTwo {
+body > div > div.cardTwo {
     margin-top: 7rem;
     width: 30rem;
     height: auto;
-}
-
-body>div.cardTwo>div {
-    width: 70rem;
-    background: linear-gradient(0deg, rgba(207, 133, 35, 0.7455357142857143) 0%, rgba(34, 195, 134, 0.9416141456582633) 67%);
     margin-left: 13rem;
 }
+body > div > div.cardTwo {
+    background: linear-gradient(0deg, rgba(207, 133, 35, 0.7455357142857143) 0%, rgba(34, 195, 134, 0.9416141456582633) 67%);
 
-.imgTwo {
+}
+
+body > div > div.cardTwo > div > div.col-4 > img {
     width: 20rem;
     height: auto;
 }
 
+.texto {
+    width: 50rem;
+}
 .btnTwo {
     margin-top: 0.5rem;
     background-color: #BD943E;
@@ -130,8 +133,7 @@ body>div.cardTwo>div {
     font-weight: bold;
     font-size: 1.5rem;
 }
-
-.tittleTwo {
+body > div > div.cardTwo > div > div.texto > h5 {
     font-family: 'Cabin Sketch', sans-serif;
     color: #af7324;
     font-weight: bold;
@@ -153,7 +155,7 @@ body>div.cardTwo>div {
     font-size: 1.2rem;
     color: black;
     text-align: left;
-    margin-top: 1.7rem;
+    margin-top: 1rem;
 }
 
 label {
