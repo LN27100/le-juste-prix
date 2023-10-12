@@ -4,6 +4,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 /* font-family: 'Cabin Sketch', sans-serif; */
 
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 header {
     border: 4mm ridge rgba(211, 220, 50, .6);
     border-radius: 10px;
@@ -34,19 +48,30 @@ h2 {
     margin-top: 2rem;
 }
 
-p {
+h3 {
     font-family: 'Architects Daughter', cursive;
-text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
 }
 
-.btn {
+p {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+#btn {
     margin-top: 0.5rem;
     background-color: #BD943E;
     border: #AF7324;
+    border-radius: 5px;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    height: 2.2rem;
+    width: 5.5rem;
 }
 
-.btn:hover {
-    background-color:#92A55D;
+#btn:hover {
+    background-color: #92A55D;
 }
 
 .bigCard {
@@ -58,6 +83,39 @@ text-align: center;
 .card {
     background: linear-gradient(0deg, rgba(34, 195, 134, 0.7847514005602241) 0%, rgba(207, 133, 35, 0.958420868347339) 100%);
     width: 25rem;
+}
+
+.cardTwo {
+    margin-top: 7rem;
+    width: 30rem;
+    height: auto;
+}
+
+body>div.cardTwo>div {
+    width: 70rem;
+    background: linear-gradient(0deg, rgba(207, 133, 35, 0.7455357142857143) 0%, rgba(34, 195, 134, 0.9416141456582633) 67%);
+    margin-left: 13rem;
+}
+
+.imgTwo {
+    width: 20rem;
+    height: auto;
+}
+
+.btnTwo {
+    margin-top: 0.5rem;
+    background-color: #BD943E;
+    border: #AF7324;
+    border-radius: 5px;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    height: 2.2rem;
+    width: 5.5rem;
+}
+
+.btnTwo:hover {
+    background-color: #92A55D;
+
 }
 
 .card-img-top {
@@ -73,10 +131,29 @@ text-align: center;
     font-size: 1.5rem;
 }
 
+.tittleTwo {
+    font-family: 'Cabin Sketch', sans-serif;
+    color: #af7324;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    animation: blink 1s infinite;
+}
+
+
 .card-text {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.2rem;
     color: black;
+}
+
+.textTwo {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+    margin-top: 1.7rem;
 }
 
 label {
