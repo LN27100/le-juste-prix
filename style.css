@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=VT323&display=swap');
-/* font-family: 'Architects Daughter', cursive; */
+/* font-family: 'Architects Daughter', cursive;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
-/* font-family: 'Cabin Sketch', sans-serif; */
+/* font-family: 'Cabin Sketch', sans-serif;*/
 
 @keyframes blink {
     0% {
@@ -42,7 +42,11 @@ h1 {
     font-family: 'Cabin Sketch', sans-serif;
     font-size: 5rem;
 }
-
+.conditionTittle {
+    font-family: 'Cabin Sketch', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
 h2 {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
@@ -86,28 +90,16 @@ p {
     width: 25rem;
 }
 
-body>div>div.cardTwo {
-    margin-top: 7rem;
-    width: 30rem;
-    height: auto;
-    margin-left: 13rem;
-}
-
-body>div>div.cardTwo {
+body > div > div.cardTwo.mx-auto.col-12 {
     background: linear-gradient(0deg, rgba(207, 133, 35, 0.7455357142857143) 0%, rgba(34, 195, 134, 0.9416141456582633) 67%);
-    width: 70rem;
+    width: 60rem;
+    margin-top: 6rem;
 }
 
-body>div>div.cardTwo>div>div.col-4>img {
+body > div > div.cardTwo.mx-auto.col-12 > div > div.col-6 > img {
     width: 20rem;
     height: auto;
 }
-
-.texto {
-    width: 50rem;
-}
-
-
 
 .btnTwo {
     margin-top: 0.5rem;
@@ -118,6 +110,7 @@ body>div>div.cardTwo>div>div.col-4>img {
     color: white;
     height: 2.2rem;
     width: 5.5rem;
+    margin-left: 4rem;
 }
 
 .btnTwo:hover {
@@ -149,21 +142,22 @@ body>div>div.cardTwo>div>div.texto>h5 {
 }
 
 
-.card-text {
+body > div > div.cardTwo.mx-auto.col-12 > div > div.texto.col-8 > p {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.2rem;
     color: black;
+    text-align: left;
+    margin-left: 4rem;
 }
 
 .textTwo {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.2rem;
     color: black;
-    text-align: left;
     margin-top: 1rem;
 }
 
 label {
     font-family: 'Architects Daughter', cursive;
     padding-bottom: 0.5rem;
-}
+} 
