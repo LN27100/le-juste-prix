@@ -18,7 +18,7 @@
     }
 }
 
-    
+
 header {
     border: 4mm ridge rgba(211, 220, 50, .6);
     border-radius: 10px;
@@ -86,18 +86,19 @@ p {
     width: 25rem;
 }
 
-body > div > div.cardTwo {
+body>div>div.cardTwo {
     margin-top: 7rem;
     width: 30rem;
     height: auto;
     margin-left: 13rem;
 }
-body > div > div.cardTwo {
-    background: linear-gradient(0deg, rgba(207, 133, 35, 0.7455357142857143) 0%, rgba(34, 195, 134, 0.9416141456582633) 67%);
 
+body>div>div.cardTwo {
+    background: linear-gradient(0deg, rgba(207, 133, 35, 0.7455357142857143) 0%, rgba(34, 195, 134, 0.9416141456582633) 67%);
+    width: 70rem;
 }
 
-body > div > div.cardTwo > div > div.col-4 > img {
+body>div>div.cardTwo>div>div.col-4>img {
     width: 20rem;
     height: auto;
 }
@@ -105,6 +106,9 @@ body > div > div.cardTwo > div > div.col-4 > img {
 .texto {
     width: 50rem;
 }
+
+
+
 .btnTwo {
     margin-top: 0.5rem;
     background-color: #BD943E;
@@ -133,7 +137,8 @@ body > div > div.cardTwo > div > div.col-4 > img {
     font-weight: bold;
     font-size: 1.5rem;
 }
-body > div > div.cardTwo > div > div.texto > h5 {
+
+body>div>div.cardTwo>div>div.texto>h5 {
     font-family: 'Cabin Sketch', sans-serif;
     color: #af7324;
     font-weight: bold;
