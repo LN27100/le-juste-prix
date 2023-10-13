@@ -1,8 +1,7 @@
 let button = document.querySelector("#btn")
 let message = document.querySelector('#message')
-// let messageTwo = docuement.querySelector('#messageTwo')
-let tentative = document.querySelector('#nbrOfTentatives')
-
+let messageTwo = document.querySelector('#messageTwo')
+let compteurTentative = document.querySelector('#nbrOfTentatives')
 
 
 // creation des noms de chaque objet
@@ -95,39 +94,35 @@ document.querySelector('#descriptif').appendChild(displayTextObject[indiceAleato
 
 
 
-//lancement du jeu
-// let buttonDislable = true
+//fonction lancement du jeu
+let buttonDislable = true
+function verifNumber() {
+    let testPrice = document.getElementById('test-price').value
+    let realPrice = Math.floor(Math.random() * 100) + 1
+    max = 100
+    let compteurTentative = Math.trunc(Math.random() * 10) +1
+    compteurTentative = 10
 
-// let compteurTentative = Math.trunc(Math.random() * 10) + 1
-// score = 10
-// button.addEventListener('click', function () {
-//     if (buttonDislable) {
-//         let testPrice = Number(document.querySelector('#test-price').value);
-//         compteurTentative;
-
-//         if (testPrice > compteurTentative) {
-//             messageTwo.innerHTML = "Moins"
-//             score--
-//             message.innerHTML = "Il vous reste " + score + " tentatives."
-//         }
-//         else if (testPrice < compteurTentative) {
-//             messageTwo.innerHTML = "Plus"
-//             score--
-//             message.innerHTML = "Il vous reste " + score + " tentatives."
-
-//         }
-
-//         else if (testPrice == compteurTentative) {
-//             messageTwo.innerHTML = "Vicoire, vous remportez l'objet !"
-//             button.disable = true
-
-//         } 
-//         else if (score === 0) {
-
-//             messageTwo.innerHTML = "Vous avez perdu ! "
-//             buttonDislable = true;
-
-//         }
-//     }
-// })
-
+    if (compteurTentative == 0) {
+        tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+        messageTwo.innerHTML = "Echec, le juste prix était de " + realPrice + " €"
+        buttonDislable = true
+    } else {
+        if (testPrice > realPrice) {
+            messageTwo.innerHTML = "Moins"
+            compteurTentative--
+            tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+        }
+        if (testPrice < realPrice) {
+            messageTwo.innerHTML = "Plus"
+            compteurTentative--
+            tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+        }
+        if (testPrice == realPrice) {
+            messageTwo.innerHTML = "Vicoire, vous remportez l'objet !"
+            tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+            buttonDislable = true
+        }
+    }
+}
+button.addEventListener('click', verifNumber)

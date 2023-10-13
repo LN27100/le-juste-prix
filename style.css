@@ -42,11 +42,7 @@ h1 {
     font-family: 'Cabin Sketch', sans-serif;
     font-size: 5rem;
 }
-.conditionTittle {
-    font-family: 'Cabin Sketch', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-}
+
 h2 {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
@@ -144,7 +140,6 @@ body>div>div.cardTwo>div>div.texto>h5 {
     animation: blink 1s infinite;
 }
 
-
 body > div > div.cardTwo.mx-auto.col-12 > div > div.texto.col-8 > p {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.2rem;
@@ -167,3 +162,25 @@ label {
     font-weight: bold;
     margin-top: 0.7rem;
 } 
+
+.conditionTittle {
+    font-family: 'Cabin Sketch', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+li {
+    font-family: 'Cabin Sketch', sans-serif;
+    font-weight: bold;   
+    text-decoration: underline;
+    -webkit-text-underline-position: under;
+    -ms-text-underline-position: under;
+    text-underline-position: under; 
+}
+
+.paraConditions {
+    font-family: 'Architects Daughter', cursive;  
+    margin-left: 2rem;
+}
