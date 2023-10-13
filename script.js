@@ -34,19 +34,56 @@ tasseImg.src = "assets/img/tasse-cassee.JPG"
 tasseImg.style = 'width : 200px'
 
 // tu rentres toutes tes variables dans un tableau 
-
 const imageObject = [mouchoirImg, chaiseImg, grainImg, pcImg, tasseImg ]
 
 
 // on va pouvoir generer un index aleatoire de notre tableau imageObject => imageObject[indiceAleatoire]
-
 let indiceAleatoire = Math.floor(Math.random() * imageObject.length)
 
 // puis on l'affiche parent.appenChild.enfant, ton image sera l'enfant de ton id= image 
-
 document.querySelector('#image').appendChild(imageObject[indiceAleatoire])
  
-// tu fais exactement la meme chose pour les noms de l'article (si tu as du mal regarde mon code )
+
+// creation des noms de chaque objet et du tableau des noms
+const nameMouchoir = document.createElement('p')
+nameMouchoir.innerHTML = "Ustensil d'autmone peu servit"
+
+const nameChaise = document.createElement('p')
+nameChaise.innerHTML = "Chaise de développeur Web"
+
+const nameGrain = document.createElement('p')
+nameGrain.innerHTML = "Grain de café"
+
+const namePc = document.createElement('p')
+namePc.innerHTML = "PC collector"
+
+const nameTasse = document.createElement('p')
+nameTasse.innerHTML = "Tasse à café en kit"
+
+const displayNameObject = [nameMouchoir, nameChaise, nameGrain, namePc, nameTasse]
+
+document.querySelector('#message').appendChild(displayNameObject[indiceAleatoire])
+
+// creation du descriptif de chaque objet et du tableau des noms
+const textMouchoir = document.createElement('t')
+textMouchoir.innerHTML = "Ustensil d'autmone peu servit"
+
+const textChaise = document.createElement('t')
+textChaise.innerHTML = "Chaise de bureau ayant prouvé sa solidité."
+
+const textGrain = document.createElement('t')
+textGrain.innerHTML = "Grain de café"
+
+const textPc = document.createElement('t')
+textPc.innerHTML = "PC collector"
+
+const textTasse = document.createElement('t')
+textTasse.innerHTML = "Tasse à café en kit"
+
+const displayTextObject = [textMouchoir, textChaise, textGrain, textPc, textTasse]
+// affichage des images et leur noms aleatoirement : 
+
+document.querySelector('#descriptif').appendChild(displayTextObject[indiceAleatoire])
 
 
 
