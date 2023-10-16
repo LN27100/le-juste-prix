@@ -1,7 +1,7 @@
 let button = document.querySelector("#btn")
 let message = document.querySelector('#message')
 let messageTwo = document.querySelector('#messageTwo')
-let compteurTentative = document.querySelector('#nbrOfTentatives')
+let nbrOfTentatives = document.querySelector('#nbrOfTentatives')
 
 
 // creation des noms de chaque objet
@@ -93,34 +93,37 @@ document.querySelector('#descriptif').appendChild(displayTextObject[indiceAleato
 
 
 
+let realPrice = Math.floor(Math.random() * 100) + 1
+max = 100
+compteurTentative = 10
 
+console.log('eerererer')
 //fonction lancement du jeu
 let buttonDislable = true
 function verifNumber() {
+
     let testPrice = document.getElementById('test-price').value
-    let realPrice = Math.floor(Math.random() * 100) + 1
-    max = 100
-    let compteurTentative = Math.trunc(Math.random() * 10) +1
-    compteurTentative = 10
+
+   
 
     if (compteurTentative == 0) {
-        tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+        nbrOfTentatives.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
         messageTwo.innerHTML = "Echec, le juste prix était de " + realPrice + " €"
         buttonDislable = true
     } else {
         if (testPrice > realPrice) {
             messageTwo.innerHTML = "Moins"
             compteurTentative--
-            tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+            nbrOfTentatives.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
         }
         if (testPrice < realPrice) {
             messageTwo.innerHTML = "Plus"
             compteurTentative--
-            tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+            nbrOfTentatives.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
         }
         if (testPrice == realPrice) {
             messageTwo.innerHTML = "Vicoire, vous remportez l'objet !"
-            tentative.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
+            nbrOfTentatives.innerHTML = "Il vous reste " + compteurTentative + " tentatives."
             buttonDislable = true
         }
     }
